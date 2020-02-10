@@ -2,7 +2,7 @@
 	<head>
 		<title>Practice 2</title>
 	</head>
-	<body>
+	<body style="background-color:powderblue;">
 		<p>Today is our 1<sup>st</sup> lab session.</p>
 		<A Name="bookmark"></A>
 		<p>H<sub>2</sub>0 is water.</p>
@@ -43,21 +43,20 @@
 		<th>Column 1 header</th>
 		<th>Column 2 header</th>
 		<th>Column 3 header</th>
+		<th>Column 4 header</th>
 		</tr>
 		<tr>
-		<td>Row 1, Col 1</td>
+		<td rowspan="2">Row A, Col 1</td>
 		<td>Row 1, Col 2</td>
 		<td>Row 1, Col 3</td>
+		<td rowspan="3" align="center">Row D, Col 4</td>
 		</tr>
 		<tr>
-		<td>Row 2, Col 1</td>
 		<td>Row 2, Col 2</td>
 		<td>Row 2, Col 3</td>
 		</tr>
 		<tr>
-		<td>Row 3, Col 1</td>
-		<td>Row 3, Col 2</td>
-		<td>Row 3, Col 3</td>
+		<td colspan="3" align="center">Row 3, Col C</td>
 		<caption align="bottom">My table label</caption>
 		</tr>
 		</table>
@@ -66,6 +65,45 @@
 		<A HREF="#bookmark">Go to bookmark (second line)</A>
 		<!--- This is an HTML comment --->
 		<h2>Images</h2>
-		<img src="images.jpeg" align="left" width="150" height="150" alt="Alt test message"/>
+		<img src="images.jpeg" align="left" width="150" height="150" alt="Alt test message, image not available"/>
+		<a href="mailto:abc@example.com">Send email</a></br>
+		<font size="1">Font size=1</font></br>
+		<font size="2">Font size=2</font></br>
+		<font size="3">Font size=3</font></br>
+		<font size="4">Font size=4</font></br>
+		<font size="5">Font size=5</font></br>
+		<font size="6">Font size=6</font></br>
+		<font size="7">Font size=7</font></br>
+		<h2>Marquee tag</h2>
+		<marquee direction="up">this is a basic marquee</marquee>
+		<h2>Style attribute</h2>
+		<h4 style="color:blue;">This is a heading</h4>
+		<p style="color:red;">This is a paragraph</p>
+		<h4 style="font-family:verdana;">This is a heading (Verdana font)</h4>
+		<p style="font-family:courier;">This is a paragraph (Courier font)</p>
+		<h4 style="font-size:300%;">This is a heading</h4>
+		<p style="font-size:160%;">This is a paragraph</p>
+		<h4 style="text-align:center;">Centered Heading</h4>
+		<p style="text-align:center;">Centered paragraph</p>
+		<h2>Different ways to specify color</h2>
+		<p style="background-color:Tomato;">Lorem Ipsum...</p>
+		<p style="color:MediumSeaGreen;">Lorem Ipsum...</p>
+		<p style="background-color:rgb(255,99,71);">...</p>
+		<p style="background-color:#ff6347;">...</p>
+		<p style="background-color:hsl(9,100%,64%);">...</p>
+		<p style="background-color:rgba(255,99,71,0.5);">...</p>
+		<p style="background-color:hsla(9,100%,64%,0.5);">...</p>
+		<h2>Image as link</h2>
+		<a href="https://www.google.com">
+		<img src="images.jpeg" align="left" width="150" height="150" alt="Alt test message, image not available"/>
+		</a>
+		</br></br></br></br></br></br></br></br></br>
+		<h2>Image floating</h2>
+		<p><img src="images.jpeg" style="float:right;width:42px;height:42px;" alt="photo"/>The image will float to the right of the 			text.</p>
+		<p><img src="images.jpeg" style="float:left;width:42px;height:42px;" alt="photo"/>The image will float to the left of the 			text.</p>
+		<h2>Image maps</h2>
+		<img src="images.jpeg" align="left" width="150" height="150" alt="Alt message" usemap="#workmap"/>
+		<map name="workmap">
+		<area shape="rect" coords="34,44,270,350" href="computer.htm">
 	</body>
 </html>
