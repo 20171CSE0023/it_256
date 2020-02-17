@@ -1,0 +1,27 @@
+body{
+	background-image:url("wood.jpg");
+	background-repeat:repeat;
+	background-attachment:fixed;
+}
+ h1{
+	color:maroon;
+ 	margin-left:40px;
+}
+p.normal{
+	background-color:white;
+	color:brown;
+	margin-left:60px;
+	font-style:italic;
+	font-family:georgia,garamond,serif;
+	font-size:large;
+	font-weight:normal;
+	font-stretch:expanded;
+	direction:ltr;
+	text-indent:2cm;
+	word-spacing:5px;
+	letter-spacing:4px;
+	text-align:center;
+}
+p.new{
+	background-color:lightblue;
+}
